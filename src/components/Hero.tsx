@@ -100,7 +100,7 @@ export default function Hero() {
                     For
                   </span>
 
-                  <span className="bg-gradient-to-r from-[#a56be7] via-[#d97bb8] to-[#e6a46f] bg-clip-text text-[42px] italic leading-[0.95] text-transparent sm:text-[72px] lg:text-[92px] 2xl:text-[110px]">
+                  <span className="bg-gradient-to-r from-[#5b2c83] via-[#8d2f6b] to-[#b35b2e] bg-clip-text text-[42px] italic leading-[0.95] text-transparent sm:text-[72px] lg:text-[92px] 2xl:text-[110px]">
                     Vijay Lakshmi
                   </span>
 
@@ -112,7 +112,7 @@ export default function Hero() {
                 </div>
 
                 {/* THIRD LINE */}
-                <div className="mt-4 bg-gradient-to-r from-[#a56be7] via-[#d97bb8] to-[#e6a46f] bg-clip-text text-[32px] italic leading-[1.1] text-transparent sm:mt-5 sm:text-[58px] lg:text-[82px] 2xl:text-[96px]">
+                <div className="mt-4 bg-gradient-to-r from-[#5b2c83] via-[#8d2f6b] to-[#b35b2e] bg-clip-text text-[32px] italic leading-[1.1] text-transparent sm:mt-5 sm:text-[58px] lg:text-[82px] 2xl:text-[96px]">
                   Beauty with Brain
                 </div>
 
