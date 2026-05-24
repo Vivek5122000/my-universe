@@ -68,3 +68,26 @@ html {
     opacity: 0;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}

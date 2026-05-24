@@ -127,7 +127,7 @@ export default function VideoMemorySection() {
         </h2>
 
         {/* CONTENT ROW */}
-        <div className="mt-16 flex items-center justify-between gap-20">
+        <div className="mt-10 flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
 
           {/* LEFT TEXT */}
           <div className="max-w-[520px]">
@@ -178,7 +178,7 @@ export default function VideoMemorySection() {
   preload="metadata"
   playsInline
   controls
-  className="relative h-[520px] w-[820px] rounded-[30px] object-cover shadow-[0_15px_40px_rgba(0,0,0,0.12)]"
+  className="relative w-full max-w-[820px] rounded-[30px] object-cover shadow-[0_15px_40px_rgba(0,0,0,0.12)]"
 >
   <source src="/family-memory.mp4" type="video/mp4" />
 </video>
