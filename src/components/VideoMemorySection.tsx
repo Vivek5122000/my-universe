@@ -4,7 +4,7 @@ export default function VideoMemorySection() {
   return (
     <section
       id="family-video"
-      className="relative h-screen overflow-hidden bg-[linear-gradient(to_bottom,#fff8fb,#fff1f6,#fff8fc)]"
+      className="relative overflow-hidden bg-[linear-gradient(to_bottom,#fff8fb,#fff1f6,#fff8fc)] min-h-screen"
     >
 
       {/* PINK GLOW */}
@@ -18,107 +18,104 @@ export default function VideoMemorySection() {
       <div className="absolute bottom-[14%] left-[5%] h-[80px] w-[220px] rounded-full bg-white/50 blur-[2px]" />
 
       {/* LARGE FOREGROUND FLOWERS */}
-<div className="absolute top-[-12%] left-[8%] animate-[fall_18s_linear_infinite] text-[48px] opacity-55">
-  🌸
-</div>
+      <div className="absolute top-[-12%] left-[8%] animate-[fall_18s_linear_infinite] text-[36px] sm:text-[48px] opacity-55">
+        🌸
+      </div>
 
-<div className="absolute top-[-15%] right-[18%] animate-[fall_22s_linear_infinite] text-[56px] opacity-45">
-  🌺
-</div>
+      <div className="absolute top-[-15%] right-[18%] animate-[fall_22s_linear_infinite] text-[42px] sm:text-[56px] opacity-45">
+        🌺
+      </div>
 
-{/* MEDIUM FLOWERS */}
-<div className="absolute top-[-10%] left-[28%] animate-[fall_16s_linear_infinite] text-[34px] opacity-60">
-  🌷
-</div>
+      {/* MEDIUM FLOWERS */}
+      <div className="absolute top-[-10%] left-[28%] animate-[fall_16s_linear_infinite] text-[28px] sm:text-[34px] opacity-60">
+        🌷
+      </div>
 
-<div className="absolute top-[-8%] right-[36%] animate-[fall_20s_linear_infinite] text-[38px] opacity-50">
-  🌼
-</div>
+      <div className="absolute top-[-8%] right-[36%] animate-[fall_20s_linear_infinite] text-[30px] sm:text-[38px] opacity-50">
+        🌼
+      </div>
 
-<div className="absolute top-[-14%] left-[48%] animate-[fall_17s_linear_infinite] text-[30px] opacity-60">
-  🌸
-</div>
+      <div className="absolute top-[-14%] left-[48%] animate-[fall_17s_linear_infinite] text-[24px] sm:text-[30px] opacity-60">
+        🌸
+      </div>
 
-{/* SMALL DISTANT FLOWERS */}
-<div className="absolute top-[-12%] left-[68%] animate-[fall_21s_linear_infinite] text-[20px] opacity-45">
-  🌺
-</div>
+      {/* SMALL DISTANT FLOWERS */}
+      <div className="absolute top-[-12%] left-[68%] animate-[fall_21s_linear_infinite] text-[18px] sm:text-[20px] opacity-45">
+        🌺
+      </div>
 
-<div className="absolute top-[-10%] right-[10%] animate-[fall_19s_linear_infinite] text-[18px] opacity-50">
-  🌸
-</div>
+      <div className="absolute top-[-10%] right-[10%] animate-[fall_19s_linear_infinite] text-[16px] sm:text-[18px] opacity-50">
+        🌸
+      </div>
 
       {/* STARS */}
-      <div className="absolute right-[24%] top-[16%] text-[20px] text-yellow-400">
+      <div className="absolute right-[24%] top-[16%] text-[16px] sm:text-[20px] text-yellow-400">
         ✨
       </div>
 
-      <div className="absolute bottom-[22%] left-[28%] text-[18px] text-yellow-400">
+      <div className="absolute bottom-[22%] left-[28%] text-[14px] sm:text-[18px] text-yellow-400">
         ⭐
       </div>
 
-      {/* MOVING STARS */}
-{/* MOON */}
-<div className="absolute right-[8%] top-[10%] h-[110px] w-[110px] rounded-full bg-gradient-to-br from-white via-[#fff8dc] to-[#ffe8b0] shadow-[0_0_60px_rgba(255,245,200,0.7)]" />
+      {/* MOON */}
+      <div className="absolute right-[8%] top-[10%] h-[70px] w-[70px] sm:h-[110px] sm:w-[110px] rounded-full bg-gradient-to-br from-white via-[#fff8dc] to-[#ffe8b0] shadow-[0_0_60px_rgba(255,245,200,0.7)]" />
 
-{/* SHOOTING STAR */}
-<div className="absolute left-[18%] top-[12%] rotate-[-20deg] text-[26px] text-white opacity-80 animate-pulse">
-  ☄️
-</div>
+      {/* SHOOTING STAR */}
+      <div className="absolute left-[18%] top-[12%] rotate-[-20deg] text-[20px] sm:text-[26px] text-white opacity-80 animate-pulse">
+        ☄️
+      </div>
 
-{/* FALLING FLOWERS */}
-<div className="absolute top-[-10%] left-[12%] animate-[fall_14s_linear_infinite] text-[22px] opacity-70">
-  🌸
-</div>
+      {/* FALLING FLOWERS */}
+      <div className="absolute top-[-10%] left-[12%] animate-[fall_14s_linear_infinite] text-[18px] sm:text-[22px] opacity-70">
+        🌸
+      </div>
 
-<div className="absolute top-[-15%] left-[28%] animate-[fall_18s_linear_infinite] text-[28px] opacity-60">
-  🌺
-</div>
+      <div className="absolute top-[-15%] left-[28%] animate-[fall_18s_linear_infinite] text-[22px] sm:text-[28px] opacity-60">
+        🌺
+      </div>
 
-<div className="absolute top-[-12%] right-[22%] animate-[fall_16s_linear_infinite] text-[20px] opacity-60">
-  🌷
-</div>
+      <div className="absolute top-[-12%] right-[22%] animate-[fall_16s_linear_infinite] text-[16px] sm:text-[20px] opacity-60">
+        🌷
+      </div>
 
-<div className="absolute top-[-8%] right-[38%] animate-[fall_20s_linear_infinite] text-[26px] opacity-50">
-  🌼
-</div>
+      <div className="absolute top-[-8%] right-[38%] animate-[fall_20s_linear_infinite] text-[20px] sm:text-[26px] opacity-50">
+        🌼
+      </div>
 
-<div className="absolute top-[-14%] left-[46%] animate-[fall_17s_linear_infinite] text-[18px] opacity-60">
-  🌸
-</div>
+      <div className="absolute top-[-14%] left-[46%] animate-[fall_17s_linear_infinite] text-[14px] sm:text-[18px] opacity-60">
+        🌸
+      </div>
 
-{/* FALLING STARS */}
-<div className="absolute top-[-10%] left-[64%] animate-[fall_15s_linear_infinite] text-[18px] text-yellow-300 opacity-70">
-  ✨
-</div>
+      {/* FALLING STARS */}
+      <div className="absolute top-[-10%] left-[64%] animate-[fall_15s_linear_infinite] text-[14px] sm:text-[18px] text-yellow-300 opacity-70">
+        ✨
+      </div>
 
-<div className="absolute top-[-14%] right-[12%] animate-[fall_19s_linear_infinite] text-[22px] text-yellow-200 opacity-60">
-  ⭐
-</div>
+      <div className="absolute top-[-14%] right-[12%] animate-[fall_19s_linear_infinite] text-[18px] sm:text-[22px] text-yellow-200 opacity-60">
+        ⭐
+      </div>
 
-<div className="absolute top-[-8%] left-[78%] animate-[fall_21s_linear_infinite] text-[16px] text-pink-200 opacity-60">
-  ✦
-</div>
+      <div className="absolute top-[-8%] left-[78%] animate-[fall_21s_linear_infinite] text-[12px] sm:text-[16px] text-pink-200 opacity-60">
+        ✦
+      </div>
 
-{/* GLOW PARTICLES */}
-<div className="absolute left-[32%] top-[28%] h-3 w-3 rounded-full bg-pink-200/70 blur-sm animate-pulse" />
+      {/* GLOW PARTICLES */}
+      <div className="absolute left-[32%] top-[28%] h-3 w-3 rounded-full bg-pink-200/70 blur-sm animate-pulse" />
 
-<div className="absolute right-[34%] bottom-[26%] h-4 w-4 rounded-full bg-violet-200/70 blur-sm animate-pulse" />
+      <div className="absolute right-[34%] bottom-[26%] h-4 w-4 rounded-full bg-violet-200/70 blur-sm animate-pulse" />
 
-<div className="absolute left-[58%] top-[22%] h-2 w-2 rounded-full bg-yellow-200/80 blur-sm animate-pulse" />
+      <div className="absolute left-[58%] top-[22%] h-2 w-2 rounded-full bg-yellow-200/80 blur-sm animate-pulse" />
 
       {/* MAIN CONTAINER */}
-      <div className="relative z-10 mx-auto flex h-full max-w-[1600px] flex-col justify-center px-12 py-10">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-[1600px] flex-col justify-center px-4 py-14 sm:px-6 lg:px-12 lg:py-10">
 
         {/* SMALL LABEL */}
-        <div className="mb-6 inline-flex w-fit rounded-full border border-pink-200/60 bg-white/50 px-5 py-2 text-[11px] uppercase tracking-[0.35em] text-[#c08fa5] backdrop-blur-xl">
-
+        <div className="mb-6 inline-flex w-fit rounded-full border border-pink-200/60 bg-white/50 px-4 py-2 text-[10px] sm:px-5 sm:text-[11px] uppercase tracking-[0.35em] text-[#c08fa5] backdrop-blur-xl">
           ✦ Gallery
-
         </div>
 
         {/* PAGE TITLE */}
-        <h2 className="font-[family-name:var(--font-heading)] text-[58px] font-light leading-[0.92] tracking-[-3px] text-[#4d3f53]">
+        <h2 className="font-[family-name:var(--font-heading)] text-[38px] sm:text-[50px] lg:text-[58px] font-light leading-[0.95] tracking-[-2px] lg:tracking-[-3px] text-[#4d3f53]">
 
           Moments That
           <br />
@@ -132,59 +129,61 @@ export default function VideoMemorySection() {
           {/* LEFT TEXT */}
           <div className="max-w-[520px]">
 
-  <div className="mb-8 h-[2px] w-[90px] rounded-full bg-gradient-to-r from-pink-300 to-violet-300" />
+            <div className="mb-8 h-[2px] w-[90px] rounded-full bg-gradient-to-r from-pink-300 to-violet-300" />
 
-  <p className="text-[19px] leading-[2] tracking-[0.01em] text-[#6d5c70]">
+            <p className="text-[16px] sm:text-[18px] lg:text-[19px] leading-[2] tracking-[0.01em] text-[#6d5c70]">
 
-    Some memories never truly leave us.
+              Some memories never truly leave us.
 
-    <br />
-    They stay hidden inside warm evenings,
-    soft laughter,
-    loving parents,
-    and the quiet little moments
-    that once felt ordinary,
-    but later became priceless.
+              <br />
+              They stay hidden inside warm evenings,
+              soft laughter,
+              loving parents,
+              and the quiet little moments
+              that once felt ordinary,
+              but later became priceless.
 
-  </p>
+            </p>
 
-  <p className="mt-10 text-[24px] font-light italic tracking-wide text-[#cf7298]">
+            <p className="mt-8 sm:mt-10 text-[20px] sm:text-[24px] font-light italic tracking-wide text-[#cf7298]">
 
-    “Love made these moments eternal.”
+              “Love made these moments eternal.”
 
-  </p>
+            </p>
 
-</div>
+          </div>
+
           {/* VIDEO SIDE */}
-          <div className="relative">
+          <div className="relative w-full lg:w-auto">
 
             {/* VIDEO GLOW */}
             <div className="absolute inset-0 rounded-[40px] bg-pink-200/20 blur-2xl" />
 
             {/* VIDEO FRAME */}
-            <div className="relative rounded-[44px] bg-gradient-to-br from-pink-100/70 via-white/80 to-violet-100/70 p-[3px] shadow-[0_25px_80px_rgba(236,180,210,0.45)]">
+            <div className="relative rounded-[28px] sm:rounded-[44px] bg-gradient-to-br from-pink-100/70 via-white/80 to-violet-100/70 p-[3px] shadow-[0_25px_80px_rgba(236,180,210,0.45)]">
 
-  {/* OUTER GLOW */}
-  <div className="absolute inset-0 rounded-[44px] bg-gradient-to-r from-pink-200/30 via-white/10 to-violet-200/30 blur-2xl" />
+              {/* OUTER GLOW */}
+              <div className="absolute inset-0 rounded-[28px] sm:rounded-[44px] bg-gradient-to-r from-pink-200/30 via-white/10 to-violet-200/30 blur-2xl" />
 
-  {/* INNER FRAME */}
-  <div className="relative overflow-hidden rounded-[42px] border border-white/70 bg-white/40 p-4 backdrop-blur-xl">
+              {/* INNER FRAME */}
+              <div className="relative overflow-hidden rounded-[26px] sm:rounded-[42px] border border-white/70 bg-white/40 p-2 sm:p-4 backdrop-blur-xl">
 
-    {/* TOP SHINE */}
-    <div className="absolute left-0 top-0 h-[120px] w-full bg-gradient-to-b from-white/40 to-transparent pointer-events-none" />
+                {/* TOP SHINE */}
+                <div className="pointer-events-none absolute left-0 top-0 h-[120px] w-full bg-gradient-to-b from-white/40 to-transparent" />
 
-    <video
-  id="familyVideo"
-  preload="metadata"
-  playsInline
-  controls
-  className="relative w-full max-w-[820px] rounded-[30px] object-cover shadow-[0_15px_40px_rgba(0,0,0,0.12)]"
->
-  <source src="/family-memory.mp4" type="video/mp4" />
-</video>
-  </div>
+                <video
+                  id="familyVideo"
+                  preload="metadata"
+                  playsInline
+                  controls
+                  className="relative w-full lg:w-[820px] rounded-[18px] sm:rounded-[30px] object-cover shadow-[0_15px_40px_rgba(0,0,0,0.12)]"
+                >
+                  <source src="/family-memory.mp4" type="video/mp4" />
+                </video>
 
-</div>
+              </div>
+
+            </div>
 
           </div>
 

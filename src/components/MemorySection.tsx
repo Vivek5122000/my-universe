@@ -1,7 +1,11 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useRef } from "react";
+import {
+  useState,
+  useRef,
+  useEffect,
+} from "react";
 
 export default function MemorySection() {
 
@@ -9,36 +13,93 @@ export default function MemorySection() {
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const handleSectionEnter = async () => {
+  const sectionRef = useRef<HTMLElement | null>(null);
 
-    const audio = audioRef.current;
+  // AUDIO CONTROL BASED ON SECTION VISIBILITY
+useEffect(() => {
 
-    if (!audio) return;
+  const audio = audioRef.current;
+  const section = sectionRef.current;
+
+  if (!audio || !section) return;
+
+  audio.volume = 0.35;
+
+  let isInsideMemories = false;
+
+  const playAudio = async () => {
 
     try {
 
-      audio.volume = 0.35;
-
-      await audio.play();
+      if (audio.paused) {
+        await audio.play();
+      }
 
     } catch (err) {
 
-      console.log("Audio play blocked");
+      console.log("Autoplay blocked");
 
     }
 
   };
 
-  const handleSectionLeave = () => {
+  const handleScroll = () => {
 
-    const audio = audioRef.current;
+    const rect = section.getBoundingClientRect();
 
-    if (!audio) return;
+    const windowHeight = window.innerHeight;
 
-    audio.pause();
-    audio.currentTime = 0;
+    /*
+      SECTION ACTIVE RANGE
+      Song continues while section occupies
+      reasonable viewport space.
+    */
+
+    const sectionVisible =
+      rect.top < windowHeight * 0.7 &&
+      rect.bottom > windowHeight * 0.3;
+
+    if (sectionVisible) {
+
+      if (!isInsideMemories) {
+
+        isInsideMemories = true;
+
+        playAudio();
+
+      }
+
+    } else {
+
+      if (isInsideMemories) {
+
+        isInsideMemories = false;
+
+        audio.pause();
+
+      }
+
+    }
 
   };
+
+  window.addEventListener("scroll", handleScroll);
+
+  window.addEventListener("touchmove", handleScroll);
+
+  handleScroll();
+
+  return () => {
+
+    window.removeEventListener("scroll", handleScroll);
+
+    window.removeEventListener("touchmove", handleScroll);
+
+    audio.pause();
+
+  };
+
+}, []);
 
   const memories = [
     {
@@ -91,10 +152,8 @@ export default function MemorySection() {
 
   return (
     <section
+      ref={sectionRef}
       id="memories"
-      onMouseEnter={handleSectionEnter}
-      onMouseLeave={handleSectionLeave}
-      onTouchStart={handleSectionEnter}
       className="relative overflow-hidden bg-[radial-gradient(circle_at_top_right,_rgba(221,208,255,0.45),transparent_28%),radial-gradient(circle_at_bottom_left,_rgba(255,220,230,0.45),transparent_30%),linear-gradient(to_bottom,#eef4ff,#fdf7fb,#fff5ef)] px-4 py-20 sm:px-6 lg:px-12"
     >
 
@@ -141,6 +200,7 @@ export default function MemorySection() {
                 {row.map((memory, index) => {
 
                   const actualIndex = globalStartIndex + index;
+
                   const isActive = activeCard === actualIndex;
 
                   return (
@@ -249,6 +309,7 @@ export default function MemorySection() {
                     </div>
                   );
                 })}
+
               </div>
             );
           })}
@@ -256,6 +317,7 @@ export default function MemorySection() {
         </div>
 
       </div>
+
     </section>
   );
 }
